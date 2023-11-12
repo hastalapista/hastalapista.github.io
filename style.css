@@ -14,17 +14,18 @@ html, body {
     overflow: hidden;
     padding: 4rem;
     box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
   }
-  
+
   .leftBlock {
-    width: 50%;
+    box-sizing: border-box;
   }
   
   .rightBlock {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
   }
 
   .logoImg {
@@ -32,33 +33,22 @@ html, body {
   }
 
   .mobileAppImg {
-    width: 100%;
+    width: 80%;
   }
 
   @media screen and (max-width: 600px) {
     .main {
       flex-direction: column-reverse;
       height: auto;
-      max-height: auto;
+      max-height: unset;
     }
   
-    .leftBlock {
-      padding: 4rem;
-      width: 80%;
-    }
-    
-    .rightBlock {
-      width: 100%;
-    }
-
-    .logoImg {
-      width: 100%;
-      height: auto;
+    .leftBlock {    
+      padding-top: 4rem;
     }
 
     .mobileAppImg {
-      width: auto;
-      height: 50vh;
+      width: 100%;
     }
   }
 
