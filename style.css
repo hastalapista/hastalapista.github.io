@@ -13,6 +13,7 @@ html, body {
     max-height: 100vh;
     overflow: hidden;
     padding: 4rem;
+    box-sizing: border-box;
   }
   
   .leftBlock {
@@ -27,7 +28,7 @@ html, body {
   }
 
   .logoImg {
-    width: 100%;
+    width: 50%;
   }
 
   .mobileAppImg {
@@ -59,4 +60,17 @@ html, body {
       width: auto;
       height: 50vh;
     }
+  }
+
+  .app-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .android {
+    height: 60px;
+  }
+  .apple {
+    height: 60px;
   }
